@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import { CLIENT_ID } from '../../constants/auth';
+// import star from '../../../files/star'
+import { Audio } from 'redux-audio'
 
 class Stream extends Component {
 
@@ -19,8 +21,8 @@ class Stream extends Component {
   }
 
   render () {
+
     const { user, tracks, activeTrack, onAuth, onPlay } = this.props;
-    // debugger
     return (
       <div>
         <div>
@@ -32,7 +34,7 @@ class Stream extends Component {
         </div>
         <br/>
         <div>
-          {
+          { 
             tracks.map((track, key) => {
               return (
                 <div className="track" key={key}>
@@ -45,7 +47,7 @@ class Stream extends Component {
         </div>
         {
           activeTrack ?
-            <audio id="audio" ref="audio" src={`${activeTrack.origin.stream_url}?client_id=${CLIENT_ID}`}></audio> :
+            <Audio src={`${activeTrack.origin.stream_url}?client_id=${CLIENT_ID}`} controls /> :
             null
         }
       </div>

@@ -22,5 +22,6 @@ function setTracks(state, action) {
 
 function setPlay(state, action) {
   const { track } = action;
-  return { ...state, activeTrack: track };
+  // debugger
+  return { tracks: state.tracks, activeTrack: track };
 }

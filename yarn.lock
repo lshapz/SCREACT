@@ -1717,6 +1717,10 @@ ieee754@^1.1.4:
   version "1.1.8"
   resolved "https://registry.yarnpkg.com/ieee754/-/ieee754-1.1.8.tgz#be33d40ac10ef1926701f6f08a2d86fbfd1ad3e4"
 
+immutable@^3.8.1:
+  version "3.8.1"
+  resolved "https://registry.yarnpkg.com/immutable/-/immutable-3.8.1.tgz#200807f11ab0f72710ea485542de088075f68cd2"
+
 imports-loader@^0.6.5:
   version "0.6.5"
   resolved "https://registry.yarnpkg.com/imports-loader/-/imports-loader-0.6.5.tgz#ae74653031d59e37b3c2fb2544ac61aeae3530a6"
@@ -2665,6 +2669,12 @@ readdirp@^2.0.0:
     minimatch "^3.0.2"
     readable-stream "^2.0.2"
     set-immediate-shim "^1.0.1"
+
+redux-audio@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/redux-audio/-/redux-audio-1.0.0.tgz#985cee20fbfc06f5338a4341822ed1b57fdd9479"
+  dependencies:
+    immutable "^3.8.1"
 
 redux-logger@^2.7.4:
   version "2.7.4"
