@@ -19,8 +19,8 @@ class Stream extends Component {
   }
 
   render () {
-    const { user, tracks = [], activeTrack, onAuth, onPlay } = this.props;
-
+    const { user, tracks, activeTrack, onAuth, onPlay } = this.props;
+    // debugger
     return (
       <div>
         <div>

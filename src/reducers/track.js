@@ -17,7 +17,7 @@ export default function(state = initialState, action) {
 
 function setTracks(state, action) {
   const { tracks } = action;
-  return [ ...state, ...tracks ];
+  return { tracks: tracks, activeTrack: null };
 }
 
 function setPlay(state, action) {
